@@ -49,7 +49,7 @@
         <div class="box color-secondary"></div>
       </div>
 
-      <h2>Multiple columns</h2>
+      <h2>Multiple Columns</h2>
       <p></p>
       <pre>.columns {
   column-count: 3;
@@ -59,6 +59,25 @@
         <div class="column color-primary"></div>
         <div class="column color-secondary"></div>
         <div class="column color-primary"></div>
+      </div>
+
+      <h2>Multiple Rows</h2>
+      <p></p>
+      <pre>.rows {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.row {
+  flex: 1;
+  width: 100%;
+  height: 32px;
+}</pre>
+      <div class="rendered-area rows">
+        <div class="row color-primary"></div>
+        <div class="row color-secondary"></div>
+        <div class="row color-primary"></div>
       </div>
 
       <h2>Chips</h2>
@@ -109,9 +128,21 @@
 
       <h2>Common Header</h2>
       <p></p>
-      <pre>
+      <pre>.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-      </pre>
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}</pre>
       <div class="rendered-area">
         <header class="header">
           <div class="header-left">
