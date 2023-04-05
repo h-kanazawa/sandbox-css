@@ -1,0 +1,61 @@
+:root {
+  --primary: #1a6854;
+  --secondary: #34bd9b;
+  --background: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: fixed;
+  background-color: var(--background);
+}
+
+main {
+  padding: 24px;
+}
+
+pre {
+  padding: 8px;
+  font-family: monospace;
+  background-color: #BBBBBB;
+}
+
+.rendered-area {
+  height: 128px;
+  width: 100%;
+  background-color: #DDDDDD;
+}
+
+.box {
+  height: 64px;
+  width: 128px;
+  background-color: var(--primary);
+}
+
+.color-primary {
+  background-color: var(--primary);
+}
+
+.color-secondary {
+  background-color: var(--secondary);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-v {
+  display: flex;
+  align-items: center;
+}
+
+.center-h {
+  display: flex;
+  justify-content: center;
+}
