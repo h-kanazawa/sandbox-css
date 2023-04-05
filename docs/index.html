@@ -49,6 +49,82 @@
         <div class="box color-secondary"></div>
       </div>
 
+      <h2>Multiple columns</h2>
+      <p></p>
+      <pre>.columns {
+  column-count: 3;
+  column-gap: 2em;
+}</pre>
+      <div class="rendered-area columns">
+        <div class="column color-primary"></div>
+        <div class="column color-secondary"></div>
+        <div class="column color-primary"></div>
+      </div>
+
+      <h2>Chips</h2>
+      <p></p>
+      <pre>.chips {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.chip {
+  display: inline-flex;
+  padding: 8px 16px;
+  align-items: center;
+}</pre>
+      <div class="rendered-area">
+        <div class="chips">
+          <div class="chip color-secondary">Tag 1</div>
+          <div class="chip color-secondary">Tag 12</div>
+          <div class="chip color-secondary">Tag 123</div>
+          <div class="chip color-secondary">Tag 1234</div>
+          <div class="chip color-secondary">Tag 12345</div>
+          <div class="chip color-secondary">Tag 123456</div>
+          <div class="chip color-secondary">Tag 1234567</div>
+          <div class="chip color-secondary">Tag 12345678</div>
+          <div class="chip color-secondary">Tag 1</div>
+          <div class="chip color-secondary">Tag 12</div>
+          <div class="chip color-secondary">Tag 123</div>
+          <div class="chip color-secondary">Tag 1234</div>
+          <div class="chip color-secondary">Tag 12345</div>
+          <div class="chip color-secondary">Tag 123456</div>
+          <div class="chip color-secondary">Tag 1234567</div>
+          <div class="chip color-secondary">Tag 12345678</div>
+        </div>
+      </div>
+
+      <h2>Float Right</h2>
+      <p></p>
+      <pre>.float {
+  float: right;
+}</pre>
+      <div class="rendered-area article">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique est eu sapien blandit, at porttitor metus lobortis. In hac habitasse platea dictumst. Mauris tempor eget ligula in placerat. Maecenas ligula risus, porttitor eget finibus suscipit, placerat nec elit. Integer tincidunt sodales turpis, eu iaculis nulla facilisis quis. Praesent in dignissim magna, eget vulputate lorem. Phasellus bibendum diam eu dui vulputate, eu egestas lacus rutrum. Fusce suscipit mi a diam semper, in rutrum elit vestibulum. Aenean auctor finibus diam, at commodo arcu dapibus eu.</p>
+        <div class="box color-primary float-right"></div>
+        <p>Quisque finibus, arcu vitae porttitor fermentum, eros tortor consectetur leo, a mattis ligula diam tempor ligula. Sed nunc lorem, porttitor id justo id, bibendum ultrices nisi. Praesent nibh ante, semper venenatis sodales quis, consectetur at ipsum. Quisque id justo ante. Duis facilisis, enim nec vestibulum lacinia, augue nibh blandit nisl, quis porta enim ligula sit amet velit. Nullam sagittis, ex quis tempus pharetra, magna quam dictum tellus, eu porta lectus odio a lacus. Nam iaculis augue euismod lorem cursus, in maximus mi maximus. Nam ac justo egestas, eleifend ligula in, accumsan ex. Nam blandit eros nisl, non accumsan nibh iaculis a. Nulla aliquam pellentesque arcu, ut finibus magna malesuada a. Donec lacinia odio elit, a ornare orci malesuada in. Curabitur laoreet orci sed nibh condimentum dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas in elementum elit, vitae suscipit ante.</p>
+      </div>
+
+      <h2>Common Header</h2>
+      <p></p>
+      <pre>
+
+      </pre>
+      <div class="rendered-area">
+        <header class="header">
+          <div class="header-left">
+            <div class="header-icon color-primary"></div>
+            <h1 class="header-title">Header Title</h1>
+          </div>
+          <div class="header-right">
+            <a href="#" class="header-link">Account</a>
+            <a href="#" class="header-link">Cart</a>
+          </div>
+        </header>
+      </div>
+
     </main>
   </body>
 </html>
