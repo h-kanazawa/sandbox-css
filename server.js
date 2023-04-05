@@ -5,8 +5,13 @@ const path = require('path');
 const PORT = 3000;
 const PUBLIC_DIR = 'docs';
 
+const urlMap = {
+  '/': '/index.html',
+  '/sandbox-css/styles.css': '/styles.css',
+};
+
 const requestHandler = (request, response) => {
-  const urlPath = request.url === '/' ? '/index.html' : request.url;
+  const urlPath = urlMap[request.url] ?? request.url;
   const filePath = path.join(__dirname, PUBLIC_DIR, urlPath);
 
   if (!fs.existsSync(filePath)) {
